@@ -1,3 +1,1 @@
-remote_theme: pages-themes/hacker@v0.2.0
-plugins:
-  - jekyll-remote-theme # Füge diese Zeile zur Plugin-Liste hinzu, wenn du bereits eine hast
+theme: jekyll-theme-minimal
