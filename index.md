@@ -7,6 +7,9 @@ title: MCA DEV
 
 Welcome to my very first website. feel free to check my products and contact me for request or general support🍕
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4247948913473559"
+     crossorigin="anonymous"></script>
+
 ## Products
 
 <div style="display: flex; justify-content: space-around; margin-top: 20px;">
