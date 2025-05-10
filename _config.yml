@@ -1,1 +1,7 @@
-title: Main
+title: MCA DEV - Venora Development
+description: Official website for Venora Development by MCA
+url: "https://mca-net.github.io"
+baseurl: "/"
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
