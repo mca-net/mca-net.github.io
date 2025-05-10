@@ -11,4 +11,4 @@ Key features:
 - simple installation
 - Link: https://create.roblox.com/store/asset/7735151379/updated-Tunnel-Echo-Sound-Area-v30
 
-[Zurück zur Homepage](index.html)
+[Back to home](index.html)
