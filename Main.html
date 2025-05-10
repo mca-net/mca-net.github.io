@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MCA DEV - Venora Development</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4247948913473559" crossorigin="anonymous"></script>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Orbitron', sans-serif;
+      background-color: #0d0d0d;
+      color: #f0f0f0;
+      overflow-x: hidden;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      gap: 2rem;
+    }
+    .title {
+      font-size: 3rem;
+      letter-spacing: 2px;
+      animation: pulse 1.5s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { color: #0dd3ff; }
+      50% { color: #ff0d6e; }
+    }
+    .socials, .products {
+      display: flex;
+      gap: 1.5rem;
+    }
+    .socials a, .products a {
+      text-decoration: none;
+      color: #0dd3ff;
+      font-size: 1.2rem;
+      padding: 10px 20px;
+      background-color: #33ff33;
+      font-weight: bold;
+      transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+    }
+    .socials a:hover, .products a:hover {
+      transform: scale(1.1);
+      color: #ff0d6e;
+      background-color: #0dd3ff;
+    }
+    .section {
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">Welcome to My Futuristic Space</div>
+    <div class="socials">
+      <a href="https://github.com/mca-net" target="_blank">GitHub</a>
+      <a href="https://www.roblox.com/users/168057171/profile" target="_blank">Roblox</a>
+      <a href="https://www.roblox.com/communities/33292602/Venora-Dev" target="_blank">Roblox Group</a>
+      <a href="https://discord.com/users/783686592363364362" target="_blank">Discord</a>
+    </div>
+
+    <div class="section">
+      <h2>Latest News</h2>
+      <p>Welcome to my official website. Feel free to check out my products and contact me for requests or general support 🍕</p>
+    </div>
+
+    <div class="section products">
+      <a href="#tesa">Tunnel Area Sound Area (Roblox)</a>
+      <a href="#ac6-realism">AC6 Realism Plugin (Roblox)</a>
+      <a href="#harmless-virus">Harmless Virus (Windows)</a>
+    </div>
+
+    <div class="section" id="ac6-realism">
+      <h2>AC6 Realism</h2>
+      <p>Currently repacking everything. Be patient....</p>
+    </div>
+
+    <div class="section" id="tesa">
+      <h2>Tunnel Area Sound Area (Roblox)</h2>
+      <p>Coming Soon...</p>
+    </div>
+
+    <div class="section" id="harmless-virus">
+      <h2>Harmless Virus (Windows)</h2>
+      <p>A harmless demo project to showcase virus-like behavior without any actual harm.</p>
+    </div>
+  </div>
+</body>
+</html>
