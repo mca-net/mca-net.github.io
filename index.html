@@ -15,70 +15,128 @@
       margin: 0;
       padding: 0;
       font-family: 'Orbitron', sans-serif;
-      background-color: #0d0d0d;
       color: #f0f0f0;
       overflow-x: hidden;
+      height: 100%;
     }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url('./bg.jpg'); /* Replace with your image filename */
+      background-size: cover;
+      background-position: center;
+      filter: blur(2px);
+      z-index: -1;
+    }
+
     .container {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
       text-align: center;
       gap: 2rem;
+      position: relative;
     }
+
+    .content-overlay {
+      background-color: rgba(48, 53, 54, 0.7);
+      padding: 2rem;
+      border-radius: 10px;
+      opacity: 0;
+      animation: fadeIn 1.5s ease-out forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
     .title {
       font-size: 3rem;
-      letter-spacing: 2px;
-      animation: pulse 1.5s infinite;
+      letter-spacing: 5px;
+      animation: pulse 3.5s infinite;
+      margin-bottom: 30px;
     }
+
     @keyframes pulse {
       0%, 100% { color: #0dd3ff; }
       50% { color: #ff0d6e; }
     }
+
     .socials, .products {
       display: flex;
       gap: 1.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
     }
+
     .socials a, .products a {
       text-decoration: none;
       color: #0dd3ff;
       font-size: 1.2rem;
       padding: 10px 20px;
-      background-color: #33ff33;
+      background-color: #8f33ff;
       font-weight: bold;
-      transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+      transition: transform 0.6s ease, color 0.6s ease, background-color 0.6s ease;
+      border-radius: 5px;
     }
+
     .socials a:hover, .products a:hover {
       transform: scale(1.1);
       color: #ff0d6e;
       background-color: #0dd3ff;
     }
+
     .section {
       margin-top: 50px;
+    }
+
+    @media (max-width: 768px) {
+      .title {
+        font-size: 2rem;
+      }
+
+      .socials, .products {
+        flex-direction: column;
+        gap: 1rem;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="title">Welcome to the official site of Venora Development</div>
-    <div class="socials">
-      <a href="https://github.com/mca-net" target="_blank">GitHub</a>
-      <a href="https://www.roblox.com/users/168057171/profile" target="_blank">Roblox</a>
-      <a href="https://www.roblox.com/communities/33292602/Venora-Dev" target="_blank">Roblox Group</a>
-      <a href="https://discord.com/users/783686592363364362" target="_blank">Discord</a>
-    </div>
+    <div class="content-overlay">
+      <div class="title">Welcome to the official site of Venora Development</div>
+      <div class="socials">
+        <a href="https://github.com/mca-net" target="_blank">GitHub</a>
+        <a href="https://www.roblox.com/users/168057171/profile" target="_blank">Roblox</a>
+        <a href="https://www.roblox.com/communities/33292602/Venora-Dev" target="_blank">Roblox Group</a>
+        <a href="https://discord.com/users/783686592363364362" target="_blank">Discord</a>
+      </div>
 
-    <div class="section">
-      <h2>Latest News</h2>
-      <p>Welcome. Feel free to check out my products and contact me for requests or general support 🍕</p>
-    </div>
+      <div class="section">
+        <h2>Latest News</h2>
+        <p>Welcome. Feel free to check out my products and contact me for requests or general support 🍕</p>
+      </div>
 
-    <div class="section products">
-      <a href="/products/tesa/index.html">Tunnel Area Sound Area (Roblox)</a>
-      <a href="/products/ac6-realism/index.html">AC6 Realism Plugin (Roblox)</a>
-      <a href="/products/harmless-virus/index.html">Harmless Virus (Windows)</a>
+      <div class="section products">
+        <a href="/products/tesa/index.html">Tunnel Area Sound Area (Roblox)</a>
+        <a href="/products/ac6-realism/index.html">AC6 Realism Plugin (Roblox)</a>
+        <a href="/products/harmless-virus/index.html">Harmless Virus (Windows)</a>
+      </div>
     </div>
   </div>
 </body>
